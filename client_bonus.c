@@ -6,7 +6,7 @@
 /*   By: aarchtou <aarchtou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/14 12:23:25 by aarchtou          #+#    #+#             */
-/*   Updated: 2023/01/16 15:20:23 by aarchtou         ###   ########.fr       */
+/*   Updated: 2023/01/17 11:56:34 by aarchtou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,8 +80,9 @@ static void	en_to_server(int pid, char *str)
 				kill(pid, SIGUSR2);
 			else
 				kill(pid, SIGUSR1);
-			usleep(900);
+			usleep(800);
 		}
+		usleep(800);
 	}
 	i = 8;
 	while (i--)
